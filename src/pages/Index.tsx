@@ -1,6 +1,4 @@
 import { Suspense, lazy } from 'react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
 // Lazy loading para componentes pesados
 const Hero = lazy(() => import('@/components/Hero'));
@@ -18,7 +16,6 @@ const SectionLoader = () => (
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
       <Suspense fallback={<SectionLoader />}>
         <Hero />
       </Suspense>
@@ -31,7 +28,6 @@ const Index = () => {
       <Suspense fallback={<SectionLoader />}>
         <Contact />
       </Suspense>
-      <Footer />
     </div>
   );
 };

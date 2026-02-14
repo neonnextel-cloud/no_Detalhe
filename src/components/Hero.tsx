@@ -20,6 +20,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
+ 
         {/* Logo */}
         <motion.div {...animationConfig.scaleIn} className="mb-8">
           <Logo size="lg" className="mx-auto" />
@@ -68,7 +69,7 @@ const Hero = () => {
             className="btn-primary rounded-md text-sm font-semibold uppercase tracking-wider"
           >
             Explorar Serviços
-          </a>w
+          </a>
         </motion.div>
 
         {/* Scroll Indicator */}

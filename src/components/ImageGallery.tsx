@@ -99,13 +99,9 @@ const ImageGallery = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="section-subtitle mb-4">GALERIA</p>
-          <h2 className="section-title text-4xl md:text-5xl mb-6 text-foreground">
-            Nossos Trabalhos
+          <h2 className="section-title text-4xl md:text-5xl mb-6 text-white">
+            Galeria
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Conheça alguns dos nossos serviços de detalhamento automotivo
-          </p>
         </motion.div>
 
         {/* Carrossel otimizado */}
