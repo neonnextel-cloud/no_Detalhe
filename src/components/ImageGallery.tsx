@@ -8,11 +8,9 @@ import andresLeal from '@/assets/andres-leal-ze_L46_GOaw-unsplash.jpg';
 // Lazy loading para outras imagens
 const loadImages = async () => {
   const images = await Promise.all([
-    import('@/assets/c-joyful-SKB5zWdX0pU-unsplash.jpg'),
     import('@/assets/car-wash-detailing-station.jpg'),
     import('@/assets/chloe-williams-vc_0qyx0bbA-unsplash.jpg'),
     import('@/assets/man-working-car-detailing-coating-car.jpg'),
-    import('@/assets/mintosko-V4b2j7f1dfc-unsplash.jpg'),
     import('@/assets/zac-nielson-8k_T1EwTySs-unsplash.jpg')
   ]);
   return images.map(img => img.default);
